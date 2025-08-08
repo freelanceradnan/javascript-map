@@ -49,7 +49,13 @@ const characters = [
 ];
 
 // Get characters with mass greater than 100
-let massThen100=characters.filter(function(element){
-    return element.mass>100
+// let massThen100=characters.filter(function(element){
+//     return element.mass>100
+// })
+// console.log(massThen100)
+
+//Get characters with height less than 200
+let heightLessThan200=characters.filter(function(element){
+    return element.height<200;
 })
-console.log(massThen100)
+console.log(heightLessThan200)
