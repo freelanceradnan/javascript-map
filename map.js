@@ -38,8 +38,14 @@ const characters = [
     },
 ];
 
-//Get an array of all names
-let allNams=characters.map(function(el){
-    return el.name;
+// //Get an array of all names
+// let allNams=characters.map(function(el){
+//     return el.name;
+// })
+// console.log(allNams)
+
+//get an array of all heights
+let allHeight=characters.map(function(element){
+    return element.height;
 })
-console.log(allNams)
+console.log(allHeight)
