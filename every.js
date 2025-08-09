@@ -64,9 +64,17 @@ const characters = [
 // console.log(mass40)
 
 // Is every character male?
-let isMale=characters.every(function(el){
-    if(el.gender=='male'){
+// let isMale=characters.every(function(el){
+//     if(el.gender=='male'){
+//         return el
+//     }
+// })
+// console.log(isMale)
+
+// Is every character shorter than 200?
+let shorterChar=characters.every(function(el){
+    if(el.height<=200){
         return el
     }
 })
-console.log(isMale)
+console.log(shorterChar)
