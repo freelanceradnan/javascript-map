@@ -60,9 +60,17 @@ const characters = [
 // console.log(isMale)
 
 // Is there at least one character with blue eyes?
-let isBlueEyes=characters.some(function(el){
-    if(el.eye_color=='blue'){
-        return el
+// let isBlueEyes=characters.some(function(el){
+//     if(el.eye_color=='blue'){
+//         return el
+//     }
+// })
+// console.log(isBlueEyes)
+
+//Is there at least one character taller than 200?
+let isHeight200=characters.some(function(el){
+    if(el.height>=200){
+        return el;
     }
 })
-console.log(isBlueEyes)
+console.log(isHeight200)
