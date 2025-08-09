@@ -48,9 +48,17 @@ const characters = [
 ];
 
 //Does every character have blue eyes?
-let blueEyes=characters.every(function(el){
-    if(el.eye_color=='blue'){
+// let blueEyes=characters.every(function(el){
+//     if(el.eye_color=='blue'){
+//         return el
+//     }
+// })
+// console.log(blueEyes)
+
+//Does every character have mass more than 40?
+let mass40=characters.every(function(el){
+    if(el.mass>=40){
         return el
     }
 })
-console.log(blueEyes)
+console.log(mass40)
