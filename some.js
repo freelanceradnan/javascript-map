@@ -51,10 +51,18 @@ const characters = [
     },
 ];
 // Is there at least one male character?
-let isMale=characters.some(function(el){
-    if(el.gender=='male')
-    {
+// let isMale=characters.some(function(el){
+//     if(el.gender=='male')
+//     {
+//         return el
+//     }
+// })
+// console.log(isMale)
+
+// Is there at least one character with blue eyes?
+let isBlueEyes=characters.some(function(el){
+    if(el.eye_color=='blue'){
         return el
     }
 })
-console.log(isMale)
+console.log(isBlueEyes)
