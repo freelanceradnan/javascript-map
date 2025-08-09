@@ -55,10 +55,18 @@ const characters = [
 // })
 // console.log(blueEyes)
 
-//Does every character have mass more than 40?
-let mass40=characters.every(function(el){
-    if(el.mass>=40){
+// //Does every character have mass more than 40?
+// let mass40=characters.every(function(el){
+//     if(el.mass>=40){
+//         return el
+//     }
+// })
+// console.log(mass40)
+
+// Is every character male?
+let isMale=characters.every(function(el){
+    if(el.gender=='male'){
         return el
     }
 })
-console.log(mass40)
+console.log(isMale)
