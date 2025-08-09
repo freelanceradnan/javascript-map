@@ -11,10 +11,50 @@
 
 //
 //does array have odd Num?
-let nums=[1,2,3,4,5,6]
-let oddNums=nums.some(function(el){
-    if(el%2!=0){
+// let nums=[1,2,3,4,5,6]
+// let oddNums=nums.some(function(el){
+//     if(el%2!=0){
+//         return el
+//     }
+// })
+// console.log(oddNums)
+
+//question given and answer following object
+const characters = [
+    {
+        name: 'Luke Skywalker',
+        height: '172',
+        mass: '77',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+    {
+        name: 'Darth Vader',
+        height: '202',
+        mass: '136',
+        eye_color: 'yellow',
+        gender: 'male',
+    },
+    {
+        name: 'Leia Organa',
+        height: '150',
+        mass: '49',
+        eye_color: 'brown',
+        gender: 'female',
+    },
+    {
+        name: 'Anakin Skywalker',
+        height: '188',
+        mass: '84',
+        eye_color: 'blue',
+        gender: 'male',
+    },
+];
+// Is there at least one male character?
+let isMale=characters.some(function(el){
+    if(el.gender=='male')
+    {
         return el
     }
 })
-console.log(oddNums)
+console.log(isMale)
