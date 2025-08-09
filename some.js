@@ -1,23 +1,23 @@
 //some provide only boolean value like every
 
 //does array have even Num?
-// let nums=[1,2,3,4,5]
-// let evenNum=nums.some(function(el){
-//     if(el%2==0){
-//         return el
-//     }
-// })
-// console.log(evenNum)
+let nums=[1,2,3,4,5]
+let evenNum=nums.some(function(el){
+    if(el%2==0){
+        return el
+    }
+})
+console.log(evenNum)
 
 //
 //does array have odd Num?
-// let nums=[1,2,3,4,5,6]
-// let oddNums=nums.some(function(el){
-//     if(el%2!=0){
-//         return el
-//     }
-// })
-// console.log(oddNums)
+let nums=[1,2,3,4,5,6]
+let oddNums=nums.some(function(el){
+    if(el%2!=0){
+        return el
+    }
+})
+console.log(oddNums)
 
 //question given and answer following object
 const characters = [
@@ -51,21 +51,21 @@ const characters = [
     },
 ];
 // Is there at least one male character?
-// let isMale=characters.some(function(el){
-//     if(el.gender=='male')
-//     {
-//         return el
-//     }
-// })
-// console.log(isMale)
+let isMale=characters.some(function(el){
+    if(el.gender=='male')
+    {
+        return el
+    }
+})
+console.log(isMale)
 
 // Is there at least one character with blue eyes?
-// let isBlueEyes=characters.some(function(el){
-//     if(el.eye_color=='blue'){
-//         return el
-//     }
-// })
-// console.log(isBlueEyes)
+let isBlueEyes=characters.some(function(el){
+    if(el.eye_color=='blue'){
+        return el
+    }
+})
+console.log(isBlueEyes)
 
 //Is there at least one character taller than 200?
 let isHeight200=characters.some(function(el){
@@ -74,3 +74,11 @@ let isHeight200=characters.some(function(el){
     }
 })
 console.log(isHeight200)
+
+//Is there at least one character that has mass less than 50?
+let less50=characters.some(function(el){
+    if(el.mass<=50){
+        return el
+    }
+})
+console.log(less50)
