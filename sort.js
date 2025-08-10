@@ -54,12 +54,18 @@ const characters = [
 ];
 
 
-// Sort by mass
+
 // Sort by height
 // Sort by gender
 
 // Sort by name
-let sortName=characters.sort(function(a,b){
-    return a.name.localeCompare(b.name)
+// let sortName=characters.sort(function(a,b){
+//     return a.name.localeCompare(b.name)
+// })
+// console.log(sortName)
+
+// Sort by mass
+let sortMass=characters.sort(function(a,b){
+    return a.mass-b.mass;
 })
-console.log(sortName)
+console.log(sortMass)
