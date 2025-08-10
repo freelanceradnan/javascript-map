@@ -58,7 +58,14 @@ const characters = [
 
 // Get the total number of characters in all the character names
 
+// let totalChar=characters.reduce(function(acc,el){
+//     return acc+=el.name.length;
+// },0)
+// console.log(totalChar)
+
+
+// Get the total number of characters in all the character names(without space)
 let totalChar=characters.reduce(function(acc,el){
-    return acc+=el.name.length;
+    return acc+=el.name.split(' ').join('').length;
 },0)
 console.log(totalChar)
