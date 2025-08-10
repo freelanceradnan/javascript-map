@@ -64,8 +64,21 @@ const characters = [
 // console.log(totalChar)
 
 
-// Get the total number of characters in all the character names(without space)
-let totalChar=characters.reduce(function(acc,el){
-    return acc+=el.name.split(' ').join('').length;
-},0)
-console.log(totalChar)
+// // Get the total number of characters in all the character names(without space)
+// let totalChar=characters.reduce(function(acc,el){
+//     return acc+=el.name.split(' ').join('').length;
+// },0)
+// console.log(totalChar)
+
+// Get the total number of characters by eye color (hint. a map of eye color to count)
+
+let numberChar=characters.reduce(function(acc,el){
+    if(acc[el.eye_color]){
+     acc[el.eye_color]++;
+    }
+    else{
+        acc[el.eye_color]=1;
+    }
+    return acc;
+},{})
+console.log(numberChar)
