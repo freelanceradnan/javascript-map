@@ -2,23 +2,23 @@
 //shorting array number(shorter to langer number)
 
 // let num=[30,23,12,344,2,4]
-// let result=num.sort(function(a,b){
-//     return a-b;
-// })
-// console.log(result)
+let result=num.sort(function(a,b){
+    return a-b;
+})
+console.log(result)
 
 // //shorting array number(larger to shorter number)
-// let arr=[200,2,23,21,234,211]
-// let result=arr.sort(function(a,b){
-//     return b-a;
-// })
-// console.log(result)
+let arr=[200,2,23,21,234,211]
+let result=arr.sort(function(a,b){
+    return b-a;
+})
+console.log(result)
 
 //sorting array string (charecter)
 
-// let names=['basundahara','padma','adnan','shaharia','mahim']
-// names.sort()
-// console.log(names)
+let names=['basundahara','padma','adnan','shaharia','mahim']
+names.sort()
+console.log(names)
 
 //solving problems following array
 
@@ -55,22 +55,22 @@ const characters = [
 //solving following questions with array:
 
 // Sort by name
-// let sortName=characters.sort(function(a,b){
-//     return a.name.localeCompare(b.name)
-// })
-// console.log(sortName)
+let sortName=characters.sort(function(a,b){
+    return a.name.localeCompare(b.name)
+})
+console.log(sortName)
 
 // Sort by mass
-// let sortMass=characters.sort(function(a,b){
-//     return a.mass-b.mass;
-// })
-// console.log(sortMass)
+let sortMass=characters.sort(function(a,b){
+    return a.mass-b.mass;
+})
+console.log(sortMass)
 
 // Sort by height
-// let sortHeight=characters.sort(function(a,b){
-//     return a.height-b.height;
-// })
-// console.log(sortHeight)
+let sortHeight=characters.sort(function(a,b){
+    return a.height-b.height;
+})
+console.log(sortHeight)
 
 //sort by gender(here female is first and male is secound because charecter order)
 let genderChar=characters.sort(function(a,b){
