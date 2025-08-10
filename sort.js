@@ -52,11 +52,7 @@ const characters = [
         gender: 'male',
     },
 ];
-
-
-
-
-// Sort by gender
+//solving following questions with array:
 
 // Sort by name
 // let sortName=characters.sort(function(a,b){
@@ -71,7 +67,13 @@ const characters = [
 // console.log(sortMass)
 
 // Sort by height
-let sortHeight=characters.sort(function(a,b){
-    return a.height-b.height;
+// let sortHeight=characters.sort(function(a,b){
+//     return a.height-b.height;
+// })
+// console.log(sortHeight)
+
+//sort by gender(here female is first and male is secound because charecter order)
+let genderChar=characters.sort(function(a,b){
+    return a.gender.localeCompare(b.gender)
 })
-console.log(sortHeight)
+console.log(genderChar)
