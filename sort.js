@@ -55,7 +55,7 @@ const characters = [
 
 
 
-// Sort by height
+
 // Sort by gender
 
 // Sort by name
@@ -65,7 +65,13 @@ const characters = [
 // console.log(sortName)
 
 // Sort by mass
-let sortMass=characters.sort(function(a,b){
-    return a.mass-b.mass;
+// let sortMass=characters.sort(function(a,b){
+//     return a.mass-b.mass;
+// })
+// console.log(sortMass)
+
+// Sort by height
+let sortHeight=characters.sort(function(a,b){
+    return a.height-b.height;
 })
-console.log(sortMass)
+console.log(sortHeight)
