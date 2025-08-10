@@ -41,7 +41,7 @@ const characters = [
 
 
 
-// Get the total number of characters in all the character names
+
 // Get the total number of characters by eye color (hint. a map of eye color to count)
 
 // // Get the total mass of all characters
@@ -51,7 +51,14 @@ const characters = [
 // console.log(totalMass)
 
 // Get the total height of all characters
-let totalHeight=characters.reduce(function(acc,el){
-    return acc+=Number(el.height);
+// let totalHeight=characters.reduce(function(acc,el){
+//     return acc+=Number(el.height);
+// },0)
+// console.log(totalHeight)
+
+// Get the total number of characters in all the character names
+
+let totalChar=characters.reduce(function(acc,el){
+    return acc+=el.name.length;
 },0)
-console.log(totalHeight)
+console.log(totalChar)
