@@ -7,9 +7,15 @@
 // })
 // console.log(result)
 
-//shorting array number(larger to shorter number)
-let arr=[200,2,23,21,234,211]
-let result=arr.sort(function(a,b){
-    return b-a;
-})
-console.log(result)
+// //shorting array number(larger to shorter number)
+// let arr=[200,2,23,21,234,211]
+// let result=arr.sort(function(a,b){
+//     return b-a;
+// })
+// console.log(result)
+
+//sorting array string (charecter)
+
+let names=['basundahara','padma','adnan','shaharia','mahim']
+names.sort()
+console.log(names)
